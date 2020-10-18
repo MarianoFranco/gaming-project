@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "main "
+    "footer";
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topheader {
+  border: solid 2px orange;
+  width: 80%;
+  height: 100px;
+  display: grid;
+  grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__account";
+}
+.topheader__logo {
+  border: solid 2px blue;
+  grid-area: topheader__logo;
+}
+.topheader__logo img {
+  border: solid 1px yellow;
+}
+
+.topheader__searchbar {
+  border: solid 2px blue;
+  grid-area: topheader__searchbar;
+}
+.topheader__searchbar form {
+  /*border: solid 2px rosybrown;*/
+  display: flex;
+}
+.search__input {
+  width: 80%;
+  height: 25px;
+}
+.search__button {
+  color: white;
+  border: none;
+  background: linear-gradient(180deg, #ed5005 0%, #772803 100%);
+
+  width: 30px;
+  border-radius: 0px 2px 2px 0px;
+  font-size: 1rem;
+}
+.topheader__account {
+  border: solid 2px blue;
+  grid-area: topheader__account;
+}
+
+nav {
+  border: solid 2px rgb(38 39 36);
+  width: 80%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+ul {
+  width: 50%;
+  border: solid 2px red;
+  display: flex;
+  list-style: none;
+}
+li {
+  width: 200px;
+  border: solid 2px pink;
+  margin: 5px;
+  padding: 5px;
+}
+
+.hero {
+  grid-area: hero;
+  width: 80%;
+  border: solid 2px blue;
+  height: 200px;
+  justify-self: center;
+}
+main {
+  grid-area: main;
+  border: solid 2px green;
+  width: 80%;
+  height: 700px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.top-games {
+  height: 200px;
+  border: solid 2px black;
+}
+.pre-order {
+  height: 200px;
+  border: solid 2px yellow;
+}
+.beast-deals {
+  height: 200px;
+  border: solid 2px red;
+}
+.discover {
+  height: 200px;
+  border: solid 2px blue;
+}
+footer {
+  grid-area: footer;
+  background: black;
+  height: 200px;
+}
+
+@media (max-width: 1200px) {
+  /*Desktop*/
+}
+@media (max-width: 991px) {
+  /*Tablet*/
+}
+@media (max-width: 767px) {
+  header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+  .topheader {
+    width: 75%;
+    border: solid 2px orange;
+    height: 100px;
+    display: grid;
+    order: 2;
+    grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__account";
+  }
+  .topheader__logo {
+    border: solid 2px blue;
+    grid-area: topheader__logo;
+    align-items: center;
+  }
+  .topheader__logo img {
+    border: solid 1px yellow;
+  }
+
+  .topheader__searchbar {
+    border: solid 2px blue;
+    grid-area: topheader__searchbar;
+  }
+  .topheader__searchbar form {
+    display: flex;
+  }
+  .search__input {
+    width: 80%;
+    height: 25px;
+  }
+  .search__button {
+    color: white;
+    border: none;
+    background: linear-gradient(180deg, #ed5005 0%, #772803 100%);
+
+    width: 30px;
+    border-radius: 0px 2px 2px 0px;
+    font-size: 1rem;
+  }
+  .topheader__account {
+    border: solid 2px blue;
+    grid-area: topheader__account;
+  }
+  nav {
+    border: solid 2px rgb(38 39 36);
+    display: flex;
+    justify-content: flex-start;
+    order: 1;
+    width: 25%;
+  }
+  main {
+    grid-area: main;
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer {
+    grid-area: footer;
+    background: black;
+    height: 200px;
+  }
+}

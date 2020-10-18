@@ -22,7 +22,7 @@ header {
   width: 80%;
   height: 100px;
   display: grid;
-  grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__account";
+  grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__cart";
 }
 .topheader__logo {
   border: solid 2px blue;
@@ -57,6 +57,10 @@ header {
   border: solid 2px blue;
   grid-area: topheader__account;
 }
+.topheader__cart {
+  border: solid 2px green;
+  grid-area: topheader__cart;
+}
 
 nav {
   border: solid 2px rgb(38 39 36);
@@ -78,13 +82,6 @@ li {
   padding: 5px;
 }
 
-.hero {
-  grid-area: hero;
-  width: 80%;
-  border: solid 2px blue;
-  height: 200px;
-  justify-self: center;
-}
 main {
   grid-area: main;
   border: solid 2px green;
@@ -93,6 +90,11 @@ main {
   justify-self: center;
   display: flex;
   flex-direction: column;
+}
+.hero {
+  grid-area: hero;
+  border: solid 2px blue;
+  height: 200px;
 }
 .top-games {
   height: 200px;
@@ -123,36 +125,49 @@ footer {
   /*Tablet*/
 }
 @media (max-width: 767px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "main "
+      "footer";
+    border: solid 1px red;
+  }
+
   header {
     grid-area: header;
     background-color: black;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+
+    grid-template-columns: auto 90%;
+    grid-template-areas: "nav topheader";
   }
   .topheader {
-    width: 75%;
-    border: solid 2px orange;
-    height: 100px;
+    border: solid 2px red;
+    width: 100%;
+    grid-area: topheader;
     display: grid;
-    order: 2;
-    grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__account";
+    grid-template-columns: 40% 20% 30% 10%;
+    grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__cart";
   }
   .topheader__logo {
-    border: solid 2px blue;
     grid-area: topheader__logo;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
   .topheader__logo img {
-    border: solid 1px yellow;
+    width: 80%;
   }
 
   .topheader__searchbar {
-    border: solid 2px blue;
     grid-area: topheader__searchbar;
-  }
-  .topheader__searchbar form {
+    border: solid 1px green;
     display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+
   .search__input {
     width: 80%;
     height: 25px;
@@ -161,7 +176,6 @@ footer {
     color: white;
     border: none;
     background: linear-gradient(180deg, #ed5005 0%, #772803 100%);
-
     width: 30px;
     border-radius: 0px 2px 2px 0px;
     font-size: 1rem;
@@ -169,13 +183,34 @@ footer {
   .topheader__account {
     border: solid 2px blue;
     grid-area: topheader__account;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .topheader__account i {
+    font-size: 2rem;
+  }
+
+  .topheader__account span {
+    display: none;
+  }
+  .topheader__cart {
+    border: solid 2px green;
+    grid-area: topheader__cart;
   }
   nav {
-    border: solid 2px rgb(38 39 36);
-    display: flex;
-    justify-content: flex-start;
-    order: 1;
-    width: 25%;
+    grid-area: nav;
+    border: solid 5px white;
+  }
+  ul {
+    border: solid 2px red;
+    display: none;
+    list-style: none;
+  }
+  li {
+    border: solid 2px pink;
+    margin: 5px;
+    padding: 5px;
   }
   main {
     grid-area: main;

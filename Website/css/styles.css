@@ -18,26 +18,28 @@ header {
   align-items: center;
 }
 .topheader {
-  border: solid 2px orange;
   width: 80%;
   height: 100px;
   display: grid;
   grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__cart";
 }
 .topheader__logo {
-  border: solid 2px blue;
   grid-area: topheader__logo;
 }
 .topheader__logo img {
-  border: solid 1px yellow;
+  width: 100;
 }
 
 .topheader__searchbar {
-  border: solid 2px blue;
   grid-area: topheader__searchbar;
+  display: flex;
+  align-items: center;
+  border: solid 1px red;
+  justify-content: center;
 }
 .topheader__searchbar form {
-  /*border: solid 2px rosybrown;*/
+  width: 100%;
+  justify-content: center;
   display: flex;
 }
 .search__input {
@@ -54,18 +56,36 @@ header {
   font-size: 1rem;
 }
 .topheader__account {
-  border: solid 2px blue;
   grid-area: topheader__account;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topheader__account a {
+  color: white;
+  font-size: 1.5rem;
 }
 .topheader__cart {
-  border: solid 2px green;
   grid-area: topheader__cart;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-nav {
-  border: solid 2px rgb(38 39 36);
+.topheader__cart a {
+  color: white;
+  font-size: 1.5rem;
+}
+.downheader {
   width: 80%;
-
+}
+.downheader__icon {
+  display: none;
+  color: white;
+}
+.downheader__checkbox {
+  display: none;
+}
+nav {
   display: flex;
   justify-content: flex-start;
 }
@@ -80,13 +100,13 @@ li {
   border: solid 2px pink;
   margin: 5px;
   padding: 5px;
+  color: white;
 }
 
 main {
   grid-area: main;
-  border: solid 2px green;
   width: 80%;
-  height: 700px;
+  height: 100vh;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -131,23 +151,22 @@ footer {
       "header "
       "main "
       "footer";
-    border: solid 1px red;
+
+    width: 100%;
   }
 
   header {
     grid-area: header;
     background-color: black;
     display: grid;
-
     grid-template-columns: auto 90%;
-    grid-template-areas: "nav topheader";
+    grid-template-areas: "downheader topheader";
   }
   .topheader {
-    border: solid 2px red;
     width: 100%;
     grid-area: topheader;
     display: grid;
-    grid-template-columns: 40% 20% 30% 10%;
+    grid-template-columns: 50% 25% 15% 10%;
     grid-template-areas: "topheader__logo topheader__searchbar topheader__account topheader__cart";
   }
   .topheader__logo {
@@ -159,10 +178,8 @@ footer {
   .topheader__logo img {
     width: 80%;
   }
-
   .topheader__searchbar {
     grid-area: topheader__searchbar;
-    border: solid 1px green;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -198,23 +215,47 @@ footer {
     border: solid 2px green;
     grid-area: topheader__cart;
   }
+  .downheader {
+    grid-area: downheader;
+    width: 100%;
+  }
+
+  .downheader__icon {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .downheader__checkbox {
+    display: none;
+  }
+  .downheader__checkbox:checked ~ nav {
+    display: block;
+  }
   nav {
-    grid-area: nav;
-    border: solid 5px white;
+    display: none;
   }
   ul {
     border: solid 2px red;
-    display: none;
+    color: white;
     list-style: none;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    background-color: black;
+    top: 100px;
   }
   li {
     border: solid 2px pink;
     margin: 5px;
     padding: 5px;
+    align-self: center;
   }
   main {
     grid-area: main;
-    border: solid 2px green;
     display: flex;
     flex-direction: column;
     width: 100%;

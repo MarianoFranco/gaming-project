@@ -1,0 +1,287 @@
+main {
+  color: white;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 90%;
+}
+.profile__img {
+  height: 430px;
+  width: 40%;
+}
+.profile__img--game {
+  width: 250px;
+  height: 350px;
+  background-image: url("../../img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px;
+  margin: auto;
+}
+.profile__info {
+  width: 60%;
+  max-width: 730px;
+  padding: 30px;
+}
+.profile__info h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+.profile__info--classification {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile__info--classification div {
+  margin-left: 15px;
+  color: #ed5005;
+  padding: 15px;
+}
+
+.profile__info--type {
+  padding: 10px;
+}
+
+.profile__info--type p {
+  padding: 5px;
+}
+
+.profile__info--type p i {
+  color: #ed5005;
+  margin-left: 10px;
+}
+.profile__info--bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile__info--bottom span {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.profile__info--bottom button {
+  min-width: 230px;
+  width: 30%;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: solid 3px #ed5005;
+  border-radius: 13px;
+  background-color: white;
+  color: #ed5005;
+}
+.profile__info--bottom button:hover {
+  min-width: 230px;
+  width: 30%;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: solid 3px #ed5005;
+  border-radius: 13px;
+  background: linear-gradient(#ed5005 0%, #772803 100%);
+  color: white;
+  transition: ease 0.2s all;
+  box-shadow: 0 1px 5px white;
+}
+.description,
+.photos {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-self: center;
+}
+.description h3,
+.photos h3 {
+  padding: 15px;
+}
+.description__text {
+  width: 70%;
+  height: 200px;
+  padding: 15px;
+  align-self: center;
+  overflow-y: scroll;
+  margin: 20px 0;
+}
+.description__text p {
+  line-height: 2rem;
+}
+
+.photos__wrapp {
+  width: 60%;
+  max-width: 600px;
+  height: 450px;
+  align-self: center;
+  margin: 25px 0;
+}
+
+.photos__wrapp--main {
+  height: 70%;
+}
+.main-img {
+  background-image: url("../../img/theAvengers/the_avengers_project-5192897.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+.main-img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.photos__wrapp--secondary {
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+}
+.mini-img-1 {
+  background-image: url("../../img/theAvengers/the_avengers_project-5192897.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 5px;
+  position: relative;
+  bottom: 10%;
+}
+.mini-img-2 {
+  background-image: url("../../img/theAvengers/the_avengers_project-5238410.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 5px;
+  position: relative;
+  bottom: 10%;
+}
+.mini-img-3 {
+  background-image: url("../../img/theAvengers/the_avengers_project-5242731.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 5px;
+  position: relative;
+  bottom: 10%;
+}
+.mini-img-4 {
+  background-image: url("../../img/theAvengers/the_avengers_project-5249484.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 5px;
+  position: relative;
+  bottom: 10%;
+}
+
+.requirements {
+  width: 90%;
+  align-self: center;
+}
+.requirements h3 {
+  margin: 10px 0;
+}
+.requirements__wrapper {
+  display: flex;
+  padding: 15px;
+}
+.requirements__wrapper--box {
+  margin: auto;
+}
+.requirements__wrapper--box h4 {
+  margin: 10px 0;
+}
+.requirements__wrapper--box em {
+  color: orange;
+  line-height: 2rem;
+}
+@media (max-width: 991px) {
+  /*Tablet*/
+  .photos__wrapp {
+    width: 80%;
+    max-width: 600px;
+    height: 450px;
+    align-self: center;
+    margin: 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  /*Movil*/
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+  }
+  .profile__img {
+    width: 100%;
+  }
+  .profile__img--game {
+    width: 250px;
+    height: 350px;
+    background-image: url(../../img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px;
+    margin: 10px auto;
+  }
+  .profile__info {
+    width: 90%;
+    max-width: 730px;
+    padding: 0px;
+  }
+
+  .photos__wrapp {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    align-self: center;
+    margin: 5px 0;
+  }
+  .photos__wrapp--main {
+    height: 90%;
+  }
+  .mini-img-1 {
+    background-image: url(../../img/theAvengers/the_avengers_project-5192897.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    bottom: 45px;
+  }
+  .mini-img-2 {
+    background-image: url(../../img/theAvengers/the_avengers_project-5238410.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    bottom: 45px;
+  }
+  .mini-img-3 {
+    background-image: url(../../img/theAvengers/the_avengers_project-5242731.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    bottom: 45px;
+  }
+  .mini-img-4 {
+    background-image: url(../../img/theAvengers/the_avengers_project-5249484.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 5px;
+    position: relative;
+    bottom: 45px;
+  }
+}

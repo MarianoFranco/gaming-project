@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/partials/layout.css">
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/account.css">
+    <script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="description" content="This is my first website project about a videogames"> 
+    <title>Account</title>
+</head>
+<body>
+  <header>
+    <div class="topheader">
+        <div class="topheader__logo">
+            <img src="img/LOGO.png" alt="LvlUp logo">
+        </div>
+        <div class="topheader__searchbar">
+            <form action="post" class="topheader__searchbar--form">
+                <input type="text"  name="searchbar" placeholder="Search..." />
+                <button class="search__button" id="search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="topheader__account">
+            <a href="create_account.html" class="topheader__account--link">
+                <i class="fas fa-user-circle"></i>
+                <span>My account</span>
+            </a>
+        </div>
+        <div class="topheader__cart">
+            <a href="checkout.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>            
+    </div>
+    <div class="downheader">
+        <label for="downheader__icon" class="downheader__icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" class="downheader__checkbox" id="downheader__icon">
+        <nav class="navigation">
+            <ul class="navigation__ul">
+                <li class="navigation__ul--li"><a href="index.html" class="active">Home</a></li>
+                <li class="navigation__ul--li"><a href="search_results.html"> Games</a> </li>
+                <li class="navigation__ul--li"><a href="account.html">Sell now </a> </li>
+                <li class="navigation__ul--li"><a href="contact.html">Contact </a> </li>
+            </ul>               
+        </nav>
+    </div>        
+  </header>
+  <main>        
+      <section class="profile">
+          <h1>Your profile</h1>
+          <hr>
+          <div class="profile__wrapp">
+            <div class="profile__wrapp--img">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="profile__wrapp--datoes">
+              <p>Name:</p>
+              <p>Email:</p>
+              <p>Telefon number:</p>
+              <p>Address:</p>
+            </div>
+            <div class="profile__wrapp--edit">
+             <button>Edit</button>
+             <button>Edit</button>
+             <button>Edit</button>
+             <button>Edit</button>
+            </div>           
+          </div>
+          <hr>
+      </section>
+      <section class="sell">
+         <h2>Sell a game</h2>
+         <form action="" >
+          <div class="sell__form">
+            <div class="sell__form--label">
+              <label for="">Title:</label>
+              <label for="">Description:</label>
+              <label for="">Gender:</label>
+              <label for="">Photos:</label>
+            </div>
+            <div class="sell__form--inputs">
+              <input type="text" name="" id="title">
+              <input type="text" name="" id="description">
+              <input type="text" id="gender">
+              <input type="text" name="" id="photos" class="photos">
+            </div>                 
+          </div> 
+          <div class="sell__form--btn">
+            <input type="button" value="SELL NOW">
+          </div>               
+         </form>
+      </section>
+  </main>
+  <footer>
+    <div class="list">
+      <ul>
+        <li>Privacy & Cookies</li>
+        <li>Support</li>
+        <li>About us</li>
+        <li>FAQ</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+    <div class="payMethods">
+      <ul>
+        <li><i class="fab fa-cc-visa"></i></li>
+        <li><i class="fab fa-cc-mastercard"></i></li>
+        <li><i class="fab fa-cc-paypal"></i></li>
+      </ul>
+    </div>
+    <div class="conditions">
+    <hr>
+      <p>Conditions and terms:</p>
+      <p>
+        All content remains copyright of its original holder. (DMCA Complaint)
+      </p>
+      <p>
+        Pictures are for personal and non commercial use. TOS | Conctact |
+        Privacy Policy
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

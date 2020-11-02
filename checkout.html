@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/partials/layout.css">
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/checkout.css">
+    <script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first website project about a videogames">    
+    <title>Checkout</title>
+</head>
+<body>
+  <header>
+    <div class="topheader">
+        <div class="topheader__logo">
+            <img src="img/LOGO.png" alt="LvlUp logo">
+        </div>
+        <div class="topheader__searchbar">
+            <form action="post" class="topheader__searchbar--form">
+                <input type="text"  name="searchbar" placeholder="Search..." />
+                <button class="search__button" id="search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="topheader__account">
+            <a href="create_account.html" class="topheader__account--link">
+                <i class="fas fa-user-circle"></i>
+                <span>My account</span>
+            </a>
+        </div>
+        <div class="topheader__cart">
+            <a href="checkout.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>            
+    </div>
+    <div class="downheader">
+        <label for="downheader__icon" class="downheader__icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" class="downheader__checkbox" id="downheader__icon">
+        <nav class="navigation">
+            <ul class="navigation__ul">
+                <li class="navigation__ul--li"><a href="index.html" class="active">Home</a></li>
+                <li class="navigation__ul--li"><a href="search_results.html"> Games</a> </li>
+                <li class="navigation__ul--li"><a href="account.html">Sell now </a> </li>
+                <li class="navigation__ul--li"><a href="contact.html">Contact </a> </li>
+            </ul>               
+        </nav>
+    </div>        
+  </header>
+  <main>
+      <form action="" class="container">        
+          <section class="shipment">
+            <h2>Shipment information</h2>
+            <div class="shipment__wrapp">
+              <div class="shipment__wrapp--data">
+                <label for="check">
+                    <p>Mariano David Franco Gallo</p>
+                    <p>Kongensgata 77</p>
+                    <p>Oslo, Norway</p>
+                    <p>+47 439 78 652</p>
+                    <span>edit</span>
+                </label>
+              </div>
+              <div class="shipment__wrapp--check">
+                <input type="radio" id="check"  checked>
+              </div>              
+            </div>                   
+            <div class="shipment__new-address">
+              <a href="#" >+ Add a new address</a>
+            </div>          
+          </section>
+          <section class="payment">
+            <h2>Payment method</h2>
+            <div class="payment__wrapp">
+              <div class="payment__wrapp--data">
+                <div class="data__card">              
+                  <div class="data__card--top">
+                    <i class="far fa-credit-card"></i>
+                    <p> Visa / Electron</p>
+                    <i class="fas fa-trash"></i>
+                  </div>
+                  <div class="data_card--bottom">
+                    <label for="">Mariano David Franco Gallo</label>
+                    <label for="">xxxx-xxxx-xxxx-9873</label>
+                    <div>
+                      <label for="">xx/xx</label>
+                      <label for="">xxx</label>
+                    </div>                   
+                  </div>                                    
+                </div>
+                <div class="data__inputs">
+                  <input type="text" name="" id="" placeholder="Insert your name" class="data__inputs--input">
+                  <input type="text" name="" id="" placeholder="Insert your card number" class="data__inputs--input">
+                  <input type="text" name="" id="" placeholder="xx/xx" class="data__inputs--input">
+                  <input type="text" name="" id="" placeholder="xxx" class="data__inputs--input">
+                  <span class="data__inputs--span">Edit</span>
+                </div>
+              </div>
+              <div class="payment__wrapp--check">
+                <input type="radio" id="check"  checked>
+              </div>              
+            </div>             
+            <div class="shipment__new-address ">
+              <a href="#" >+ Add a new address</a>
+            </div>        
+          </section> 
+          <div class="line">            
+          </div>        
+          <section class="summary">
+            <h2>Order summary</h2>
+           <div class="summary__wrapp">
+              <div class="s-games">
+                <div class="s-games__img">                 
+                </div>
+                <div class="s-games__title">
+                  <p>Name: </p>
+                  <p>Quantity:</p>
+                  <p>Price:</p>
+                </div>
+                <div class="s-games__texts">
+                  <p>Avengers</p>
+                  <p>
+                    <i class="fas fa-minus-circle"></i>
+                    1
+                    <i class="fas fa-plus-circle"></i>
+                  </p>
+                  <p>
+                    €39,99
+                  </p>
+                </div>
+                <div class="shipment__wrapp--check">
+                  <input type="radio" id="check"  checked>
+                </div> 
+              </div>
+              <div class="s-games">
+                <div class="s-games__img">
+                 
+                </div>
+                <div class="s-games__title">
+                  <p>Name: </p>
+                  <p>Quantity:</p>
+                  <p>Price:</p>
+                </div>
+                <div class="s-games__texts">
+                  <p>Avengers</p>
+                  <p>
+                    <i class="fas fa-minus-circle"></i>
+                    1
+                    <i class="fas fa-plus-circle"></i>
+                  </p>
+                  <p>
+                    €39,99
+                  </p>
+                </div>
+                <div class="shipment__wrapp--check">
+                  <input type="radio" id="check"  checked>
+                </div> 
+              </div>
+              <div class="s-games">
+                <div class="s-games__img">
+                 
+                </div>
+                <div class="s-games__title">
+                  <p>Name: </p>
+                  <p>Quantity:</p>
+                  <p>Price:</p>
+                </div>
+                <div class="s-games__texts">
+                  <p>Avengers</p>
+                  <p>
+                    <i class="fas fa-minus-circle"></i>
+                    1
+                    <i class="fas fa-plus-circle"></i>
+                  </p>
+                  <p>
+                    €39,99
+                  </p>
+                </div>
+                <div class="shipment__wrapp--check">
+                  <input type="radio" id="check"  checked>
+                </div> 
+              </div>
+           </div>
+           <hr>
+           <div class="summary__total">
+             <p>Total:</p>
+             <p class="summary__total--price">€160,00</p>
+           </div>
+           <div class="summary__btn">
+             <input type="submit" value="Place order">
+           </div>
+          </section>            
+      </form>       
+  </main>
+  <footer>
+    <div class="list">
+      <ul>
+        <li>Privacy & Cookies</li>
+        <li>Support</li>
+        <li>About us</li>
+        <li>FAQ</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+    <div class="payMethods">
+      <ul>
+        <li><i class="fab fa-cc-visa"></i></li>
+        <li><i class="fab fa-cc-mastercard"></i></li>
+        <li><i class="fab fa-cc-paypal"></i></li>
+      </ul>
+    </div>
+    <div class="conditions">
+    <hr>
+      <p>Conditions and terms:</p>
+      <p>
+        All content remains copyright of its original holder. (DMCA Complaint)
+      </p>
+      <p>
+        Pictures are for personal and non commercial use. TOS | Conctact |
+        Privacy Policy
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

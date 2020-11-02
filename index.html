@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/partials/layout.css">
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/index.css">
+    <script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is my first website project about a videogames">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <div class="topheader__logo">
+                <img src="img/LOGO.png" alt="LvlUp logo">
+            </div>
+            <div class="topheader__searchbar">
+                <form action="post" class="topheader__searchbar--form">
+                    <input type="text"  name="searchbar" placeholder="Search..." />
+                    <button class="search__button" id="search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="topheader__account">
+                <a href="create_account.html" class="topheader__account--link">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My account</span>
+                </a>
+            </div>
+            <div class="topheader__cart">
+                <a href="checkout.html">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>            
+        </div>
+        <div class="downheader">
+            <label for="downheader__icon" class="downheader__icon"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" class="downheader__checkbox" id="downheader__icon">
+            <nav class="navigation">
+                <ul class="navigation__ul">
+                    <li class="navigation__ul--li"><a href="index.html" class="active">Home</a></li>
+                    <li class="navigation__ul--li"><a href="search_results.html"> Games</a> </li>
+                    <li class="navigation__ul--li"><a href="account.html">Sell now </a> </li>
+                    <li class="navigation__ul--li"><a href="contact.html">Contact </a> </li>
+                </ul>               
+            </nav>
+        </div>        
+    </header>
+    <section class="hero">
+        <div class="banner"></div>
+        <div class="circles">
+            <div class="circles__dot"><i class="fas fa-circle"></i></div>
+            <div class="circles__dot"><i class="far fa-circle"></i></div>
+            <div class="circles__dot"><i class="far fa-circle"></i></div>
+        </div>
+        <div class="lines">
+            <div class="lines__division"></div>
+        </div>
+    </section>   
+    <main>        
+        <section class="top">          
+            <h1>Top Games</h1>              
+            <div class="top-games">
+                <div class="top-games__cover">
+                    <img src="img/portadas/dead-by-daylight-cover.jpg" alt="game-image" class="top-games__cover--img">
+                    <p class="top-games__cover--title">DEAD BY DEADLIGHT</p>
+                    <p class="top-games__cover--price">€39,99</p>
+                    <p class="top-games__cover--oldprice">€59,89</p>
+                </div>
+                <div class="top-games__cover">
+                    <img src="img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg" alt="game-image" class="top-games__cover--img">
+                    <p class="top-games__cover--title">MARVEL'S AVENGERS</p>
+                    <p class="top-games__cover--price">€51,99</p>
+                    <p class="top-games__cover--oldprice">€69,99</p>
+                </div>
+                <div class="top-games__cover">
+                    <img src="img/portadas/1.jpg" alt="game-image" class="top-games__cover--img">
+                    <p class="top-games__cover--title">SHADOW OF MORDOR</p>
+                    <p class="top-games__cover--price">€3,99</p>
+                    <p class="top-games__cover--oldprice">€18,99</p>
+                </div>
+            </div>            
+        </section>
+        <section class="pre-order">
+            <img src="img/pes21/portada-pre-order.jpg" alt="pre-order img" class="pre-order__img">                          
+            <div class="pre-order__cover">
+                <a href="game_profile.html" class="pre-order__cover--btn">PRE-ORDER NOW</a>
+            </div>
+            <div class="lines">
+                <div class="lines__division"></div>
+            </div>
+        </section>
+        <section class="beast-deals">
+            <h2>BEAST DEALS</h2>
+            <div class="bd-wrapp">
+                <div class="bd-wrapp__cover">
+                    <img src="img/fallGuys/capsule_616x353.jpg" class="bd-wrapp__cover--img" alt="game-img">
+                    <div class="bd-wrapp__cover--btn"><a href="#">Buy cheaper</a></div>
+                    <div class="bd-wrapp__cover--discount"><span>-50%</span></div>
+                </div>
+                <div class="bd-wrapp__cover">
+                    <img src="img/horizon/Horizont zero.jpg" class="bd-wrapp__cover--img" alt="game-img">
+                    <div class="bd-wrapp__cover--btn"><a href="#">Buy cheaper</a></div>
+                    <div class="bd-wrapp__cover--discount"><span>-50%</span></div>
+                </div>
+                <div class="bd-wrapp__cover">
+                    <img src="img/cyberpunk/cyberpunk.jpg" class="bd-wrapp__cover--img" alt="game-img">
+                    <div class="bd-wrapp__cover--btn"><a href="#">Buy cheaper</a></div>
+                    <div class="bd-wrapp__cover--discount"><span>-50%</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="d__h2">
+                <h2>Discover games</h2>                           
+            </div>
+            <div class="d__container">
+                <div class="d__games--line">
+                    <div class="lines__division"></div>
+                </div>
+                <div class="d__games">                   
+                    <div class="d__games--img">
+                        <img src="img/westland/_product_backgrounds_-_wasteland_3_pc.jpg" alt="" >
+                    </div>                    
+                    <p class="d__games--title">Westland</p>                
+                    <div class="d__games--icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="d__games--discount">
+                        <span >-20%</span>
+                    </div>                    
+                    <div class="d__games--prices">
+                        <span class="oldprice">-36€</span>
+                        <span class="newprice">30€</span>
+                    </div>
+                    <div class="d__games--btn">
+                        <a href="" >ADD TO CART</a>
+                    </div>                    
+                    <div class="d__games--line">
+                        <div class="lines__division"></div>
+                    </div>
+                </div>
+                <div class="d__games">                   
+                    <div class="d__games--img">
+                        <img src="img/residen_evil/resident_evil_7_-_products_background_01_8.jpg" alt="" >
+                    </div>                    
+                    <p class="d__games--title">Westland</p>                
+                    <div class="d__games--icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="d__games--discount">
+                        <span >-20%</span>
+                    </div>                    
+                    <div class="d__games--prices">
+                        <span class="oldprice">-36€</span>
+                        <span class="newprice">30€</span>
+                    </div>
+                    <div class="d__games--btn">
+                        <a href="" >ADD TO CART</a>
+                    </div>                    
+                    <div class="d__games--line">
+                        <div class="lines__division"></div>
+                    </div>
+                </div>
+                <div class="d__games">                   
+                    <div class="d__games--img">
+                        <img src="img/red_dead/red_dead_redemption_2_3.jpg" alt="" >
+                    </div>                    
+                    <p class="d__games--title">Westland</p>                
+                    <div class="d__games--icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="d__games--discount">
+                        <span >-20%</span>
+                    </div>                    
+                    <div class="d__games--prices">
+                        <span class="oldprice">-36€</span>
+                        <span class="newprice">30€</span>
+                    </div>
+                    <div class="d__games--btn">
+                        <a href="" >ADD TO CART</a>
+                    </div>                    
+                    <div class="d__games--line">
+                        <div class="lines__division"></div>
+                    </div>
+                </div>
+                <div class="d__games">                   
+                    <div class="d__games--img">
+                        <img src="img/nba/2.jpg" alt="" >
+                    </div>                    
+                    <p class="d__games--title">Westland</p>                
+                    <div class="d__games--icon">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <div class="d__games--discount">
+                        <span >-20%</span>
+                    </div>                    
+                    <div class="d__games--prices">
+                        <span class="oldprice">-36€</span>
+                        <span class="newprice">30€</span>
+                    </div>
+                    <div class="d__games--btn">
+                        <a href="" >ADD TO CART</a>
+                    </div>                    
+                    <div class="d__games--line">
+                        <div class="lines__division"></div>
+                    </div>
+                </div>
+            </div>           
+        </section>
+    </main>
+    <footer>
+        <div class="list">
+          <ul>
+            <li>Privacy & Cookies</li>
+            <li>Support</li>
+            <li>About us</li>
+            <li>FAQ</li>
+            <li>Help</li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+          </ul>
+        </div>
+        <div class="payMethods">
+          <ul>
+            <li><i class="fab fa-cc-visa"></i></li>
+            <li><i class="fab fa-cc-mastercard"></i></li>
+            <li><i class="fab fa-cc-paypal"></i></li>
+          </ul>
+        </div>
+        <div class="conditions">
+        <hr>
+          <p>Conditions and terms:</p>
+          <p>
+            All content remains copyright of its original holder. (DMCA Complaint)
+          </p>
+          <p>
+            Pictures are for personal and non commercial use. TOS | Conctact |
+            Privacy Policy
+          </p>
+        </div>
+    </footer>
+</body>
+</html>

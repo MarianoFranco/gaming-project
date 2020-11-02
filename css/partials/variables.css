@@ -1,0 +1,6 @@
+:root {
+  --text-color: red;
+}
+main {
+  color: var(--text-color);
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my first website project about a videogames">    
+    <link rel="stylesheet" href="css/partials/header.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/layout.css">
+    <link rel="stylesheet" href="css/partials/search_results.css">
+    <script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
+
+    <title>Search Results</title>
+</head>
+<body>
+  <header>
+    <div class="topheader">
+          <div class="topheader__logo">
+              <img src="img/LOGO.png" alt="LvlUp logo">
+          </div>
+          <div class="topheader__searchbar">
+              <form action="post" class="topheader__searchbar--form">
+                  <input type="text"  name="searchbar" placeholder="Search..." />
+                  <button class="search__button" id="search"><i class="fas fa-search"></i></button>
+              </form>
+          </div>
+          <div class="topheader__account">
+              <a href="create_account.html" class="topheader__account--link">
+                  <i class="fas fa-user-circle"></i>
+                  <span>My account</span>
+              </a>
+          </div>
+          <div class="topheader__cart">
+              <a href="checkout.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>            
+    </div>
+    <div class="downheader">
+          <label for="downheader__icon" class="downheader__icon"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" class="downheader__checkbox" id="downheader__icon">
+          <nav class="navigation">
+              <ul class="navigation__ul">
+                  <li class="navigation__ul--li"><a href="index.html" class="active">Home</a></li>
+                  <li class="navigation__ul--li"><a href="search_results.html"> Games</a> </li>
+                  <li class="navigation__ul--li"><a href="account.html">Sell now </a> </li>
+                  <li class="navigation__ul--li"><a href="contact.html">Contact </a> </li>
+              </ul>               
+          </nav>
+    </div>        
+  </header>      
+  <main>
+        <section class="games-results">
+          <h1>All games</h1>
+          <div class="order-bar">
+            <div class="order-bar__list">
+              <ul>
+                <li class="order-bar__list--active">Everything</li>
+                <li>New games</li>
+                <li>Pre-Owned</li>
+              </ul>
+            </div>
+            <div class="order-bar__sortby">
+              <span>Sort by:</span>
+              <label for="sortby" class="sortby__label">Bestselling <i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" name="" id="sortby" class="sortby__checkbox">              
+              <form action="" class="sortby__form">
+                <ul>
+                  <li>                    
+                    <input type="radio" checked > 
+                    <label for="" class="active">Bestselling</label>
+                  </li>
+                  <li>                    
+                    <input type="radio"> 
+                    <label for="">Alphabetically</label>
+                  </li>
+                  <li>                    
+                    <input type="radio">
+                    <label for="">User rating</label> 
+                  </li>
+                  <li>                    
+                    <input type="radio"> 
+                    <label for="">Newest first</label>
+                  </li>
+                  <li>                    
+                    <input type="radio"> 
+                    <label for="">Oldest first</label>
+                  </li>
+                </ul>
+              </form>              
+            </div>
+            <div class="order-bar__icon">
+              <i class="fas fa-th"></i>
+            </div>            
+          </div>
+          <hr>
+          <div class="games-wrapper">
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/dead-by-daylight-cover.jpg" alt="game-image" class="games-wrapper__cover--img" ></a>              
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg" alt="game-image" class="games-wrapper__cover--img"></a>   
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/efootball-pes-2021.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/f1-_2020_-schumacher-_edition-_pc.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/gta5premiumbase2.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/nba_-2k21-_mamba_-forever-_edition-_pc.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/resident_evil_7_-_biohazard_cover.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/wasteland-pc-cdkeys_.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+            <div class="games-wrapper__cover">
+              <a href="game_profile.html" class="games-wrapper__cover--a"><img src="img/portadas/iron-harvest-1920-pc.jpg" alt="game-image" class="games-wrapper__cover--img"></a>
+              <p class="games-wrapper__cover--title">adasdad</p>
+              <p class="games-wrapper__cover--price">39</p>
+              <p class="games-wrapper__cover--oldprice">25</p>
+            </div>
+          </div>
+          <hr>
+          <div class="games-pages">            
+            <a href="#" class="games-pages--active">1</a>
+            <a href="" class="games-pages__a">2</a>
+            <a href="" class="games-pages__a">3</a>
+            <a href="" class="games-pages__a">...</a>
+            <a href="" class="games-pages__a">9</a>
+            <a href="" class="games-pages__a"><i class="fas fa-chevron-circle-right"></i></a>
+          </div>
+        </section>          
+  </main>
+  <footer>
+      <div class="list">
+        <ul>
+          <li>Privacy & Cookies</li>
+          <li>Support</li>
+          <li>About us</li>
+          <li>FAQ</li>
+          <li>Help</li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+      <div class="payMethods">
+        <ul>
+          <li><i class="fab fa-cc-visa"></i></li>
+          <li><i class="fab fa-cc-mastercard"></i></li>
+          <li><i class="fab fa-cc-paypal"></i></li>
+        </ul>
+      </div>
+      <div class="conditions">
+      <hr>
+        <p>Conditions and terms:</p>
+        <p>
+          All content remains copyright of its original holder. (DMCA Complaint)
+        </p>
+        <p>
+          Pictures are for personal and non commercial use. TOS | Conctact |
+          Privacy Policy
+        </p>
+      </div>
+  </footer>
+</body>
+</html>

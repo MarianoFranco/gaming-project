@@ -1,0 +1,146 @@
+main {
+  background-color: black;
+  color: white;
+}
+.games-results {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.order-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+}
+.order-bar__list ul {
+  display: flex;
+}
+.order-bar__list ul {
+  color: white;
+  text-align: center;
+}
+.order-bar__list ul li {
+  width: 100px;
+  text-align: center;
+  margin: 1px;
+  padding: 7px;
+  list-style: none;
+}
+.order-bar__list--active {
+  color: #ed5005;
+  position: relative;
+}
+.order-bar__list--active::after {
+  content: "";
+  height: 1px;
+  width: 70%;
+  background-color: #ed5005;
+  position: absolute;
+  bottom: 4px;
+  left: 16%;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.order-bar__list li:hover {
+  color: #6d7579;
+}
+.sortby__label {
+  color: #ed5005;
+}
+.sortby__checkbox {
+  display: none;
+}
+.sortby__checkbox:checked ~ .sortby__form {
+  display: block;
+  position: absolute;
+}
+.sortby__form {
+  display: none;
+}
+.sortby__form ul {
+  background-color: #ebebeb;
+  width: 150px;
+  padding: 15px;
+  list-style: none;
+  position: relative;
+  right: 12%;
+  top: 5px;
+  border-radius: 5px;
+  border: solid 1px black;
+  color: #707070;
+}
+.sortby__form ul li {
+  line-height: 1rem;
+  margin: 10px;
+}
+.sortby__form ul li:hover {
+  color: #ed5005;
+}
+.order-bar__icon {
+  font-size: 1.7rem;
+  color: #ed5005;
+}
+.games-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0;
+}
+.games-wrapper__cover {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 15px;
+  align-items: center;
+}
+.games-wrapper__cover--a {
+  width: 70%;
+  border-radius: 5px;
+}
+.games-wrapper__cover--img {
+  width: 100%;
+}
+.games-wrapper__cover--img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.games-wrapper__cover--title {
+  margin-top: 13px;
+  font-size: 15px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  width: 60%;
+  text-align: center;
+}
+.games-wrapper__cover--title:hover {
+  font-size: 16px;
+  text-shadow: 0px 1px 3px #ed5005;
+  transition: all 0.3 ease;
+}
+.games-wrapper__cover--price {
+  margin-top: 10px;
+  font-size: 23px;
+  font-style: bold;
+  color: white;
+}
+.games-wrapper__cover--oldprice {
+  margin-top: 10px;
+  color: white;
+  text-decoration: line-through;
+}
+.games-pages {
+  align-self: center;
+  margin: 10px 0;
+}
+.games-pages__a {
+  text-decoration: none;
+  color: white;
+}
+.games-pages--active {
+  text-decoration: none;
+  color: #ed5005;
+}

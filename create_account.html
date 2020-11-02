@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/partials/layout.css">
+  <link rel="stylesheet" href="css/partials/header.css">
+  <link rel="stylesheet" href="css/partials/footer.css">
+  <link rel="stylesheet" href="css/partials/create_account.css">
+  <script src="https://kit.fontawesome.com/4a5f897340.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is my first website project about a videogames">  
+  <title>Create account</title>
+</head>
+<body>
+  <header>
+    <div class="topheader">
+        <div class="topheader__logo">
+            <img src="img/LOGO.png" alt="LvlUp logo">
+        </div>
+        <div class="topheader__searchbar">
+            <form action="post" class="topheader__searchbar--form">
+                <input type="text"  name="searchbar" placeholder="Search..." />
+                <button class="search__button" id="search"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="topheader__account">
+            <a href="create_account.html" class="topheader__account--link">
+                <i class="fas fa-user-circle"></i>
+                <span>My account</span>
+            </a>
+        </div>
+        <div class="topheader__cart">
+            <a href="checkout.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>            
+    </div>
+    <div class="downheader">
+        <label for="downheader__icon" class="downheader__icon"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" class="downheader__checkbox" id="downheader__icon">
+        <nav class="navigation">
+            <ul class="navigation__ul">
+                <li class="navigation__ul--li"><a href="index.html" class="active">Home</a></li>
+                <li class="navigation__ul--li"><a href="search_results.html"> Games</a> </li>
+                <li class="navigation__ul--li"><a href="account.html">Sell now </a> </li>
+                <li class="navigation__ul--li"><a href="contact.html">Contact </a> </li>
+            </ul>               
+        </nav>
+    </div>        
+  </header>  
+  <main>
+    <h1>Create an account or register</h1>
+      <section class="wrapper">        
+        <div class="sign-in">
+          <h2 class="sign-in__title">Sign in</h2>
+          <hr>
+          <form action="" class="sign-in__form">
+            <div class="sign-in__form--box">
+              <label for="">Account email</label>
+              <input class="sign-in__for--input" type="text">
+            </div>
+            <div class="sign-in__form--box">
+              <label for="">Password</label>
+              <input class="sign-in__for--input" type="password">
+            </div>
+            <div class="sign-in__form--box">
+              <input  type="button" value="Log in" class="btn">
+            </div>             
+          </form>
+          <a href="" class="sign-in__forgotpass">FORGOT YOUR PASSWORD?</a>
+        </div>
+        <hr>
+        <div class="register">
+          <h2 class="register__title">Register</h2>
+          <hr>
+          <form action="" class="register__form">
+            <div class="register__form--box">
+              <label for="">Introduce your name</label>
+              <input class="register__for--input" type="text">
+            </div>
+            <div class="register__form--box">
+              <label for="">Introduce your email</label>
+              <input class="register__for--input" type="text">
+            </div>
+            <div class="register__form--box">
+              <label for="">Enter your new password</label>
+              <input class="register__for--input" type="password">
+            </div>
+            <div class="register__form--box">
+              <label for="">Confirm your password</label>
+              <input class="register__for--input" type="password">
+            </div>
+            <div class="register__form--box">
+              <input type="button" value="CREATE ACCOUNT" class="btn">
+            </div>
+          </form>
+        </div>
+      </section>       
+  </main>
+  <footer>
+    <div class="list">
+      <ul>
+        <li>Privacy & Cookies</li>
+        <li>Support</li>
+        <li>About us</li>
+        <li>FAQ</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    <div class="social">
+      <ul>
+        <li><i class="fab fa-youtube"></i></li>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+    <div class="payMethods">
+      <ul>
+        <li><i class="fab fa-cc-visa"></i></li>
+        <li><i class="fab fa-cc-mastercard"></i></li>
+        <li><i class="fab fa-cc-paypal"></i></li>
+      </ul>
+    </div>
+    <div class="conditions">
+    <hr>
+      <p>Conditions and terms:</p>
+      <p>
+        All content remains copyright of its original holder. (DMCA Complaint)
+      </p>
+      <p>
+        Pictures are for personal and non commercial use. TOS | Conctact |
+        Privacy Policy
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

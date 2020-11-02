@@ -1,0 +1,50 @@
+footer {
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "list  list"
+    "social payMethods "
+    "conditions  conditions";
+}
+.list {
+  grid-area: list;
+}
+.list ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.list ul li {
+  padding: 15px;
+  list-style: none;
+}
+.social {
+  grid-area: social;
+}
+.payMethods {
+  grid-area: payMethods;
+}
+.social ul,
+.payMethods ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  color: #6d7579;
+}
+.social ul li,
+.payMethods ul li {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.conditions {
+  grid-area: conditions;
+  text-align: center;
+  justify-content: center;
+}
+.conditions hr {
+  opacity: 0.4;
+  margin: 10px 0;
+}
+.conditions p {
+  line-height: 25px;
+}

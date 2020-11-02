@@ -1,0 +1,251 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 49% auto 49%;
+  grid-template-areas:
+    "shipment line summary"
+    "payment line summary";
+}
+.shipment {
+  grid-area: shipment;
+  border: solid 1px white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.shipment h2,
+.payment h2 {
+  color: white;
+  padding: 10px;
+}
+.shipment__wrapp,
+.payment__wrapp {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.shipment__wrapp--data {
+  color: white;
+}
+.shipment__wrapp--data p {
+  padding: 5px 10px;
+}
+.shipment__wrapp--data span {
+  padding: 5px;
+  color: #ed5005;
+}
+.shipment__wrapp--check,
+.payment__wrapp--check {
+  position: relative;
+}
+.shipment__new-address {
+  margin: 20px;
+}
+.shipment__new-address a {
+  color: #ed5005;
+  text-decoration: none;
+}
+.payment {
+  grid-area: payment;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+.payment__wrapp {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.payment__wrapp--data {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.data__card {
+  border-radius: 10px;
+  background-color: #6d7579;
+  width: 260px;
+  height: 150px;
+  margin: 20px 0;
+  padding: 15px;
+}
+.data__card--top {
+  display: flex;
+  justify-content: space-between;
+}
+.data__card--top i {
+  color: #ed5005;
+}
+.data_card--bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 10px;
+}
+.data_card--bottom label {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  position: relative;
+}
+.data_card--bottom > div {
+  display: flex;
+  justify-content: space-around;
+}
+.data__inputs {
+  display: flex;
+  flex-direction: column;
+}
+.data__inputs--input {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.data__inputs--span {
+  color: #ed5005;
+  padding: 5px;
+}
+.line {
+  grid-area: line;
+  display: flex;
+  justify-self: center;
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}
+
+.summary {
+  grid-area: summary;
+  border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 80%;
+  max-width: 80%;
+  border-radius: 10px;
+}
+.summary h2 {
+  color: white;
+}
+.summary__wrapp {
+  margin: 5px;
+  height: 90%;
+}
+.s-games {
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.s-games p {
+  padding: 10px;
+}
+.s-games__img {
+  background-image: url("../../img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+}
+.s-games__title {
+  color: white;
+}
+.s-games__texts {
+  color: white;
+  text-align: center;
+}
+.s-games__texts i {
+  color: #ed5005;
+}
+.summary__total {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  align-items: center;
+}
+.summary__total--price {
+  font-size: 1.5rem;
+}
+.summary__btn {
+  align-self: center;
+}
+.summary__btn input {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  background: linear-gradient(#ed5005 0%, #772803 100%);
+  position: relative;
+  color: white;
+  font-size: 1.3rem;
+}
+.summary__btn input:hover {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  background: linear-gradient(#ed5005 0%, #772803 100%);
+  position: relative;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: 0px 2px 2px white;
+}
+@media (max-width: 991px) {
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 49% 49%;
+    grid-template-areas:
+      "shipment payment"
+      "summary summary ";
+
+    padding: 15px;
+  }
+  .shipment {
+    grid-area: shipment;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
+  .summary {
+    grid-area: summary;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 80%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .summary__btn {
+    align-self: center;
+    position: relative;
+    top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .line {
+    display: none;
+  }
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "shipment"
+      "payment "
+      "summary";
+    margin: auto;
+  }
+  .summary {
+    grid-area: summary;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 90%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}

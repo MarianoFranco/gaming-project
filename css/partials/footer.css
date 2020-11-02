@@ -17,6 +17,9 @@ footer {
   padding: 15px;
   list-style: none;
 }
+.list ul li:hover {
+  text-decoration: underline;
+}
 .social {
   grid-area: social;
 }

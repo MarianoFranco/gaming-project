@@ -62,7 +62,7 @@ main {
   font-size: 2rem;
   margin: 20px 0;
 }
-.profile__info--bottom button {
+.profile__info--bottom a {
   min-width: 230px;
   width: 30%;
   margin: 20px 0;
@@ -71,8 +71,11 @@ main {
   border-radius: 13px;
   background-color: white;
   color: #ed5005;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Roboto Condensed", cursive;
 }
-.profile__info--bottom button:hover {
+.profile__info--bottom a:hover {
   min-width: 230px;
   width: 30%;
   margin: 20px 0;

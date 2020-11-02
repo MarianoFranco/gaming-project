@@ -18,7 +18,7 @@
             <img src="img/LOGO.png" alt="LvlUp logo">
         </div>
         <div class="topheader__searchbar">
-            <form action="post" class="topheader__searchbar--form">
+            <form action="#" class="topheader__searchbar--form">
                 <input type="text"  name="searchbar" placeholder="Search..." />
                 <button class="search__button" id="search"><i class="fas fa-search"></i></button>
             </form>
@@ -49,21 +49,19 @@
     </div>        
   </header>
   <main>
-      <form action="" class="container">        
+      <form action="#" class="container">        
           <section class="shipment">
             <h2>Shipment information</h2>
             <div class="shipment__wrapp">
-              <div class="shipment__wrapp--data">
-                <label for="check">
+              <div class="shipment__wrapp--data">                
                     <p>Mariano David Franco Gallo</p>
                     <p>Kongensgata 77</p>
                     <p>Oslo, Norway</p>
                     <p>+47 439 78 652</p>
-                    <span>edit</span>
-                </label>
+                    <span>edit</span>                
               </div>
               <div class="shipment__wrapp--check">
-                <input type="radio" id="check"  checked>
+                <input type="radio" id="shipment-check"  checked>
               </div>              
             </div>                   
             <div class="shipment__new-address">
@@ -81,19 +79,19 @@
                     <i class="fas fa-trash"></i>
                   </div>
                   <div class="data_card--bottom">
-                    <label for="">Mariano David Franco Gallo</label>
-                    <label for="">xxxx-xxxx-xxxx-9873</label>
+                    <label for="name">Mariano David Franco Gallo</label>
+                    <label for="card">xxxx-xxxx-xxxx-9873</label>
                     <div>
-                      <label for="">xx/xx</label>
-                      <label for="">xxx</label>
+                      <label for="data">xx/xx</label>
+                      <label for="code">xxx</label>
                     </div>                   
                   </div>                                    
                 </div>
                 <div class="data__inputs">
-                  <input type="text" name="" id="" placeholder="Insert your name" class="data__inputs--input">
-                  <input type="text" name="" id="" placeholder="Insert your card number" class="data__inputs--input">
-                  <input type="text" name="" id="" placeholder="xx/xx" class="data__inputs--input">
-                  <input type="text" name="" id="" placeholder="xxx" class="data__inputs--input">
+                  <input type="text" name="name" id="name" placeholder="Insert your name" class="data__inputs--input">
+                  <input type="text" name="card-n" id="card" placeholder="Insert your card number" class="data__inputs--input">
+                  <input type="text" name="data" id="data" placeholder="xx/xx" class="data__inputs--input">
+                  <input type="text" name="code" id="code" placeholder="xxx" class="data__inputs--input">
                   <span class="data__inputs--span">Edit</span>
                 </div>
               </div>
@@ -130,7 +128,7 @@
                   </p>
                 </div>
                 <div class="shipment__wrapp--check">
-                  <input type="radio" id="check"  checked>
+                  <input type="radio" id="shipment-check-2"  checked>
                 </div> 
               </div>
               <div class="s-games">
@@ -154,7 +152,7 @@
                   </p>
                 </div>
                 <div class="shipment__wrapp--check">
-                  <input type="radio" id="check"  checked>
+                  <input type="radio" id="shipment-check-3"  checked>
                 </div> 
               </div>
               <div class="s-games">
@@ -178,7 +176,7 @@
                   </p>
                 </div>
                 <div class="shipment__wrapp--check">
-                  <input type="radio" id="check"  checked>
+                  <input type="radio" id="shipment-check-4"  checked>
                 </div> 
               </div>
            </div>

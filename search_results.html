@@ -19,7 +19,7 @@
               <img src="img/LOGO.png" alt="LvlUp logo">
           </div>
           <div class="topheader__searchbar">
-              <form action="post" class="topheader__searchbar--form">
+              <form action="#" class="topheader__searchbar--form">
                   <input type="text"  name="searchbar" placeholder="Search..." />
                   <button class="search__button" id="search"><i class="fas fa-search"></i></button>
               </form>
@@ -62,29 +62,29 @@
             </div>
             <div class="order-bar__sortby">
               <span>Sort by:</span>
-              <label for="sortby" class="sortby__label">Bestselling <i class="fas fa-angle-down"></i></label>
-              <input type="checkbox" name="" id="sortby" class="sortby__checkbox">              
-              <form action="" class="sortby__form">
+              <label for="sortby" class="sortby__label" id="bestselling">Bestselling <i class="fas fa-angle-down"></i></label>
+              <input type="checkbox" name="bestselling" id="sortby" class="sortby__checkbox">              
+              <form action="#" class="sortby__form">
                 <ul>
                   <li>                    
-                    <input type="radio" checked > 
-                    <label for="" class="active">Bestselling</label>
+                    <input type="radio" id="bestselling-radio" checked > 
+                    <label for="bestselling-radio" class="active">Bestselling</label>
                   </li>
                   <li>                    
-                    <input type="radio"> 
-                    <label for="">Alphabetically</label>
+                    <input id="alpha-radio" type="radio"> 
+                    <label for="alpha-radio">Alphabetically</label>
                   </li>
                   <li>                    
-                    <input type="radio">
-                    <label for="">User rating</label> 
+                    <input id="rating-radio" type="radio">
+                    <label for="rating-radio">User rating</label> 
                   </li>
                   <li>                    
-                    <input type="radio"> 
-                    <label for="">Newest first</label>
+                    <input id="newest-radio" type="radio"> 
+                    <label for="newest-radio">Newest first</label>
                   </li>
                   <li>                    
-                    <input type="radio"> 
-                    <label for="">Oldest first</label>
+                    <input id="oldest-radio" type="radio"> 
+                    <label for="oldest-radio">Oldest first</label>
                   </li>
                 </ul>
               </form>              

@@ -98,6 +98,7 @@ main {
 .games-wrapper__cover--a {
   width: 70%;
   border-radius: 5px;
+  text-decoration: none;
 }
 .games-wrapper__cover--img {
   width: 100%;
@@ -107,14 +108,14 @@ main {
   transition: all 0.5s ease;
 }
 .games-wrapper__cover--title {
-  margin-top: 13px;
+  margin: 13px auto;
   font-size: 15px;
   color: black;
   border-radius: 5px;
   padding: 10px;
   background-color: white;
-  width: 60%;
   text-align: center;
+  max-width: 250px;
 }
 .games-wrapper__cover--title:hover {
   font-size: 16px;

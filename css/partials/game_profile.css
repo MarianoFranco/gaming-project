@@ -134,41 +134,7 @@ main {
   justify-content: space-between;
   height: 30%;
 }
-.mini-img-1 {
-  background-image: url("../../img/theAvengers/the_avengers_project-5192897.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  margin: 5px;
-  position: relative;
-  bottom: 10%;
-}
-.mini-img-2 {
-  background-image: url("../../img/theAvengers/the_avengers_project-5238410.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  margin: 5px;
-  position: relative;
-  bottom: 10%;
-}
-.mini-img-3 {
-  background-image: url("../../img/theAvengers/the_avengers_project-5242731.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  margin: 5px;
-  position: relative;
-  bottom: 10%;
-}
-.mini-img-4 {
-  background-image: url("../../img/theAvengers/the_avengers_project-5249484.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+.mini-img {
   width: 100%;
   margin: 5px;
   position: relative;

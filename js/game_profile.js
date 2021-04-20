@@ -128,6 +128,12 @@ async function getId(gamesId){
 		 
 		`;
 
+		//Requirements section
+
+		requirements.innerHTML += `
+			
+			${jsonResults.short_description}
+		`; 
 
 		
         

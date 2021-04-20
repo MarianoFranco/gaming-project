@@ -108,7 +108,6 @@ main {
 }
 
 .photos__wrapp {
-  width: 60%;
   max-width: 600px;
   height: 450px;
   align-self: center;
@@ -131,16 +130,22 @@ main {
 }
 .photos__wrapp--secondary {
   display: flex;
-  justify-content: space-between;
-  height: 30%;
+
+  margin: 10px 0 0 0;
 }
 .mini-img {
-  width: 100%;
   margin: 5px;
   position: relative;
-  bottom: 10%;
+  max-width: 130px;
+  object-fit: contain;
+  object-position: center center;
 }
-
+.mini-img:hover {
+  border: solid 1px white;
+  margin: 3px auto 7px;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
 .requirements {
   width: 90%;
   align-self: center;
@@ -153,7 +158,7 @@ main {
   padding: 15px;
 }
 .requirements__wrapper--box {
-  margin: auto;
+  margin: 0 auto;
 }
 .requirements__wrapper--box h4 {
   margin: 10px 0;

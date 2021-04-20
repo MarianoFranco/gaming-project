@@ -27,8 +27,8 @@ async function getGamesCards(){
 						<img src=${getCoverImg} alt="game-image" class="games-wrapper__cover--img">
 						<h3 class="games-wrapper__cover--title">${jsonResults[i].name}</h3>
 					</a>					
-					<p class="games-wrapper__cover--price">${jsonResults[i].prices.price}</p>
-					<p class="games-wrapper__cover--oldprice">${jsonResults[i].prices.regular_price}</p>
+					<p class="games-wrapper__cover--price">${jsonResults[i].prices.price}${jsonResults[i].prices.currency_symbol}</p>
+					<p class="games-wrapper__cover--oldprice">${jsonResults[i].prices.regular_price}${jsonResults[i].prices.currency_symbol}</p>
 				</div>
 			`;
 

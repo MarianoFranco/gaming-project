@@ -19,6 +19,8 @@ async function getId(gamesId){
         const jsonResults = await response.json();
 		console.log(jsonResults);
 
+		//Profile section 
+
 		const getImgArray = jsonResults.images;
 		let getImgProfile = '';
 
@@ -88,6 +90,15 @@ async function getId(gamesId){
 			AVAILAVILITY: <i class="far fa-times-circle"></i>
 			`;
 		}
+
+		//Description section
+
+		description.innerHTML += `
+			<h3>DESCRIPTION</h3>
+			${jsonResults.description}
+
+		`;
+
 
 
 		

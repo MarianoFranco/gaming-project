@@ -14,10 +14,6 @@ main {
 .profile__img--game {
   width: 250px;
   height: 350px;
-  background-image: url("../../img/portadas/marvels-avengers-cover-pc-cdkeys-.jpg");
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
   padding: 25px;
   margin: auto;
 }
@@ -47,13 +43,14 @@ main {
 }
 
 .profile__info--type p {
-  padding: 5px;
+  padding: 10px;
 }
 
 .profile__info--type p i {
   color: #ed5005;
   margin-left: 10px;
 }
+
 .profile__info--bottom {
   display: flex;
   justify-content: space-evenly;

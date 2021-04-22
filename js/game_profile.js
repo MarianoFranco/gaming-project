@@ -99,18 +99,7 @@ async function getId(gamesId){
 
 		`;
 
-		//Photos section
-		// for(i= 0; i < getImgArray.length; i++){
-		// 	if(i !== 0){
-		// 		photos.innerHTML += `				
-				 
-		// 			<img src="${getImgArray[i].src}" />		
-					  
 				
-		// 		`;
-		// 	}			
-		// }
-		
 		photos.innerHTML += `
 			<h3>PHOTOS</h3>
 		 	<hr>

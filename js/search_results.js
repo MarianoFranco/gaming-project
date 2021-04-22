@@ -18,8 +18,7 @@ async function getGamesCards(){
 					getCoverImg = imagenes[j].src
 					console.log(getCoverImg)
 				}			
-			}
-		
+			}		
 			
 			gamesWrapper.innerHTML += `
 				<div class="games-wrapper__cover">
@@ -35,6 +34,10 @@ async function getGamesCards(){
 		}
 
 	} catch(error){
+		document.querySelector('.alert').innerHTML = showAlertTouser(
+			'An error occured. We are working to fix it as soon as possible',
+			'danger'
+		);
 
 	}finally{
 

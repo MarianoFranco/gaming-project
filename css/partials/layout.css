@@ -51,6 +51,16 @@ footer {
   grid-area: footer;
   background: black;
 }
+.danger {
+  padding: 10px;
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(#ed5005 0%, #772803 100%);
+}
 @media (max-width: 991px) {
   /*Tablet*/
   body {

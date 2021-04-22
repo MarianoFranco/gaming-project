@@ -126,7 +126,11 @@ async function getId(gamesId){
 
 		
         
-    }catch{
+    }catch(error){
+		document.querySelector('.alert').innerHTML = showAlertTouser(
+			'An error occured. We are working to fix it as soon as possible',
+			'danger'
+		);
 
     }finally{
 

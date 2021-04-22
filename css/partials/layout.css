@@ -60,6 +60,7 @@ footer {
   font-weight: bolder;
   color: white;
   background: linear-gradient(#ed5005 0%, #772803 100%);
+  margin: 10px;
 }
 @media (max-width: 991px) {
   /*Tablet*/

@@ -118,7 +118,7 @@ main {
   height: 70%;
 }
 .main-img {
-  height: 100%;
+  width: 560px;
   object-fit: contain;
   object-position: center center;
 }

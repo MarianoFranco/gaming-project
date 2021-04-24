@@ -80,14 +80,21 @@ async function getId(gamesId){
 
 		if(jsonResults.is_in_stock){
 
-			document.querySelector('.stock').innerHTML +=`
-			AVAILAVILITY: <i class="far fa-check-circle"></i>
-			`;
+			if(jsonResults.is_on_backorder === false){
+				document.querySelector('.stock').innerHTML +=`
+				AVAILAVILITY: <i class="far fa-check-circle"></i> In stock
+				`;
+			}else{
+
+				document.querySelector('.stock').innerHTML +=`
+				AVAILAVILITY: <i class="far fa-clock"></i> Comming soon
+				`;
+			}
 			
-		}else{
+		}else {
 
 			document.querySelector('.stock').innerHTML +=`
-			AVAILAVILITY: <i class="far fa-times-circle"></i>
+			AVAILAVILITY: <i class="far fa-times-circle"></i> Out of stock
 			`;
 		}
 
@@ -105,7 +112,7 @@ async function getId(gamesId){
 		 	<hr>
 		 	<div class="photos__wrapp">
 		   		<div class="photos__wrapp--main">
-					<img src="${getImgArray[1].src}" class="main-img"/>
+					<img src="${getImgArray[1].src}" class="main-img active"/>
 		   		</div>
 		   		<div class="photos__wrapp--secondary">
 			 		<img src="${getImgArray[1].src}" class="mini-img" />
@@ -116,7 +123,18 @@ async function getId(gamesId){
 		 	</div>
 		 
 		`;
+		
+		const miniImgs = document.querySelector('.photos__wrapp--secondary');
+		const mainImg = document.querySelector('.main-img');
 
+		miniImgs.onclick = function(e){
+			console.log (e.target);
+			let targetImg = e.target.getAttribute("src");
+			console.log (targetImg);
+			mainImg.src = targetImg;
+			
+		}
+		
 		//Requirements section
 
 		requirements.innerHTML += `

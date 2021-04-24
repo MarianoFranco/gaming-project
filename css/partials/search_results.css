@@ -91,8 +91,8 @@ main {
 .games-wrapper__cover {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  padding: 15px;
+  width: 300px;
+  padding: 10px;
   align-items: center;
 }
 .games-wrapper__cover--a {

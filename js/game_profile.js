@@ -15,42 +15,23 @@ const requirements = document.querySelector('.requirements');
 
 async function getId(gamesId){
     try{
-        const response = await fetch('https://lvlupgames.argenteam.tech/wp-json/wc/store/products/' + gamesId);
+        const response = await fetch('https://lvl-up-games.herokuapp.com/api/products/' + gamesId);
+		
         const jsonResults = await response.json();
-		console.log(jsonResults);
-
-		//Profile section 
-
-		const getImgArray = jsonResults.images;
-		let getImgProfile = '';
-
-		for(i= 0; i < getImgArray.length; i++){
-			if(i === 0){
-				console.log(getImgArray[i]);
-				getImgProfile = getImgArray[i].src;
-			}			
-		}
-
-		const getCategoriesArray = jsonResults.categories;
-		let getCategory = '';
-
-		for(i= 0; i < getCategoriesArray.length; i++){
-			if(i === 0){
-				console.log(getCategoriesArray[i]);
-				getCategory = getCategoriesArray[i].name;
-			}			
-		}
-
+	
 		
 
+		const productAttributes = jsonResults.data.attributes;
+		console.log(productAttributes);
 		
+		//Profile section 	
 
         profile.innerHTML +=  `
             <div class="profile__img">
-		  		<img src="${getImgProfile}" class="profile__img--game" />		  		
+		  		<img src="${productAttributes.image_url}" class="profile__img--game" />		  		
 		 	</div>        
 		 	<div class="profile__info">
-		   		<h2>${jsonResults.name}</h2>
+		   		<h2>${productAttributes.name}</h2>
 		   		<hr>
 		   		<div class="profile__info--classification">
 			 		<p>CLASIFICATION:</p>
@@ -64,32 +45,26 @@ async function getId(gamesId){
 		   		</div>
 		   		<hr>
 		   		<div class="profile__info--type">
-			 		<p>GENDER: ${getCategory}</p>
+			 		<p>GENDER:${productAttributes.gender}</p>
 			 		<p class="stock"> </p>
 			 		<p>RELEASE DATE: 04/09/2020</p>
 			 		<p>PLATFORM:   <i class="fab fa-windows"></i></p>
 		   		</div>
 		   		<hr>
 		  		<div class="profile__info--bottom">
-			 		<span>${jsonResults.prices.price}${jsonResults.prices.currency_symbol}</span>
+			 		<span>${productAttributes.price_after_discount}</span>
 			 		<a href="checkout.html">BUY NOW</a>
 				</div>
 		 	</div>
 
         `; 
 
-		if(jsonResults.is_in_stock){
+		if(productAttributes.in_stock){
 
-			if(jsonResults.is_on_backorder === false){
-				document.querySelector('.stock').innerHTML +=`
+			document.querySelector('.stock').innerHTML +=`
 				AVAILAVILITY: <i class="far fa-check-circle"></i> In stock
 				`;
-			}else{
-
-				document.querySelector('.stock').innerHTML +=`
-				AVAILAVILITY: <i class="far fa-clock"></i> Comming soon
-				`;
-			}
+			
 			
 		}else {
 
@@ -102,7 +77,7 @@ async function getId(gamesId){
 
 		description.innerHTML += `
 			<h3>DESCRIPTION</h3>
-			${jsonResults.description}
+			${productAttributes.description}
 
 		`;
 
@@ -112,13 +87,13 @@ async function getId(gamesId){
 		 	<hr>
 		 	<div class="photos__wrapp">
 		   		<div class="photos__wrapp--main">
-					<img src="${getImgArray[1].src}" class="main-img active"/>
+					<img src="${productAttributes.image1}" class="main-img active"/>
 		   		</div>
 		   		<div class="photos__wrapp--secondary">
-			 		<img src="${getImgArray[1].src}" class="mini-img" />
-			 		<img src="${getImgArray[2].src}" class="mini-img" />
-			 		<img src="${getImgArray[3].src}" class="mini-img" />
-			 		<img src="${getImgArray[4].src}" class="mini-img" />
+			 		<img src="${productAttributes.image2}" class="mini-img" />
+			 		<img src="${productAttributes.image3}" class="mini-img" />
+			 		<img src="${productAttributes.image4}" class="mini-img" />
+			 		<img src="${productAttributes.image5}" class="mini-img" />
 		   		</div>
 		 	</div>
 		 

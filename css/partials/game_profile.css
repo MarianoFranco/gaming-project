@@ -154,6 +154,7 @@ main {
 .requirements__wrapper {
   display: flex;
   padding: 15px;
+  margin: 20px auto;
 }
 .requirements__wrapper--box {
   margin: 10px auto;
@@ -220,7 +221,7 @@ main {
     margin: 20px 0;
   }
   .photos__wrapp--main {
-    height: 90%;
+    height: 55%;
   }
   .main-img {
     height: 100%;
@@ -253,5 +254,6 @@ main {
   .requirements__wrapper {
     display: block;
     padding: 15px;
+   
   }
 }

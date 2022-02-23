@@ -114,7 +114,7 @@ async function getId(gamesId){
 
 		requirements.innerHTML += `
 			
-			${jsonResults.short_description}
+			${productAttributes.requirements}
 		`; 
 
 		

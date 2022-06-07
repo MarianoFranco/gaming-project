@@ -151,8 +151,7 @@ main {
 .requirements h3 {
   margin: 10px 0;
 }
-.requirements__wrapper {
-  display: flex;
+.requirements__wrapper { 
   padding: 15px;
   margin: 20px auto;
 }
